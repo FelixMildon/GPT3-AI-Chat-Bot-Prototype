@@ -58,7 +58,7 @@ export function ChatLine({ who = 'bot', message }: Message) {
             <div className="flex-1 gap-4">
               <p className="font-large text-xxl text-gray-900">
                 <a href="#" className="hover:underline">
-                  {who == 'bot' ? 'Felixs Bot' : 'You'}
+                  {who == 'bot' ? 'Doctor Bot' : 'You'}
                 </a>
               </p>
               <p

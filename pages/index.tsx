@@ -6,9 +6,9 @@ function Home() {
     <Page className="flex flex-col gap-12">
       
       <section className="flex flex-col gap-6 ">
-        <Text variant="h1">Felixs AI</Text>
+        <Text variant="h1">Doctor AI</Text>
         <Text className="text-zinc-600">
-          Warning: Confidently tells lies
+          Warning: not a real docotor. 
         </Text>
       </section>
 

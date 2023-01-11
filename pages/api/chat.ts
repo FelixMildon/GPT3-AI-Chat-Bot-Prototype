@@ -12,8 +12,8 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 })
 
-const botName = 'Felixs Bot'
-const userName = 'News reporter' // TODO: move to ENV var
+const botName = 'Doctor'
+const userName = 'Sick person' // TODO: move to ENV var
 const firstMessge = initialMessages[0].message
 
 const openai = new OpenAIApi(configuration)
@@ -46,7 +46,7 @@ const generatePromptFromMessages = (messages: Message[]) => {
 export default async function handler(req: any, res: any) {
   const messages = req.body.messages
   const messagesPrompt = generatePromptFromMessages(messages)
-  const defaultPrompt = `I am Felixs Assistant. \n\nThis is the conversation between Felixs Assistant and a news reporter.\n\n${botName}: ${firstMessge}\n${userName}: ${messagesPrompt}\n${botName}: `
+  const defaultPrompt = `I am a doctor. \n\nThis is the conversation between a doctor and a patient.\n\n${botName}: ${firstMessge}\n${userName}: ${messagesPrompt}\n${botName}: `
   const finalPrompt = process.env.AI_PROMPT
     ? `${process.env.AI_PROMPT}${messagesPrompt}\n${botName}: `
     : defaultPrompt
