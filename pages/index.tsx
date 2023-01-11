@@ -8,7 +8,7 @@ function Home() {
       <section className="flex flex-col gap-6 ">
         <Text variant="h1">Doctor AI</Text>
         <Text className="text-zinc-600">
-          Warning: not a real docotor. 
+          WARNING: not a real doctor, this app is for software testing only. 
         </Text>
       </section>
 
