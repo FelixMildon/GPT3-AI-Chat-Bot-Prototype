@@ -9,7 +9,7 @@ const COOKIE_NAME = 'nextjs-ai-chat-gpt3'
 export const initialMessages: Message[] = [
   {
     who: 'bot',
-    message: 'Hello, I am Felixs GPT Bot, here to assist with general questions.',
+    message: 'Hello I am Felixs AI. Ask me a question or give me an instruction, I like specific.',
   },
 ]
 

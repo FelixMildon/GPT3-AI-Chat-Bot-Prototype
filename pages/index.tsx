@@ -6,14 +6,14 @@ function Home() {
     <Page className="flex flex-col gap-12">
       
       <section className="flex flex-col gap-6 ">
-        <Text variant="h1">Felixs bot</Text>
+        <Text variant="h1">Felixs AI</Text>
         <Text className="text-zinc-600">
-          Have some general banter with AI
+          Warning: Confidently tells lies
         </Text>
       </section>
 
       <section className="flex flex-col gap-3">
-        <Text variant="h2">AI Chat Bot:</Text>
+        <Text variant="h2">AI GPT-3:</Text>
         <div className="lg:w-2/3">
           <Chat />
         </div>
