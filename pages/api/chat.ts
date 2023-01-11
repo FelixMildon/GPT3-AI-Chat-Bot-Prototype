@@ -12,7 +12,7 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 })
 
-const botName = 'AI'
+const botName = 'Felix Bot'
 const userName = 'News reporter' // TODO: move to ENV var
 const firstMessge = initialMessages[0].message
 
@@ -46,7 +46,7 @@ const generatePromptFromMessages = (messages: Message[]) => {
 export default async function handler(req: any, res: any) {
   const messages = req.body.messages
   const messagesPrompt = generatePromptFromMessages(messages)
-  const defaultPrompt = `I am Friendly AI Assistant. \n\nThis is the conversation between AI Bot and a news reporter.\n\n${botName}: ${firstMessge}\n${userName}: ${messagesPrompt}\n${botName}: `
+  const defaultPrompt = `I am Felixs Bot Assistant. \n\nThis is the conversation between Felix Bot and a news reporter.\n\n${botName}: ${firstMessge}\n${userName}: ${messagesPrompt}\n${botName}: `
   const finalPrompt = process.env.AI_PROMPT
     ? `${process.env.AI_PROMPT}${messagesPrompt}\n${botName}: `
     : defaultPrompt

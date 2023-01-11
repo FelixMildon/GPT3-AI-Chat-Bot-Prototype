@@ -4,10 +4,11 @@ import { Chat } from '../components/Chat'
 function Home() {
   return (
     <Page className="flex flex-col gap-12">
-      <section className="flex flex-col gap-6">
+      
+      <section className="flex flex-col gap-6 ">
         <Text variant="h1">Felixs bot</Text>
         <Text className="text-zinc-600">
-          Requires more fine tuning. Just a general assistant.
+          Have some general banter with AI
         </Text>
       </section>
 
@@ -17,7 +18,9 @@ function Home() {
           <Chat />
         </div>
       </section>
+     
     </Page>
+    
   )
 }
 
