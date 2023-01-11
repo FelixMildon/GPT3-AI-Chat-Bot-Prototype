@@ -3,13 +3,13 @@ import { Button } from './Button'
 import { type Message, ChatLine, LoadingChatLine } from './ChatLine'
 import { useCookies } from 'react-cookie'
 
-const COOKIE_NAME = 'nextjs-example-ai-chat-gpt3'
+const COOKIE_NAME = 'nextjs-ai-chat-gpt3'
 
 // default first message to display in UI (not necessary to define the prompt)
 export const initialMessages: Message[] = [
   {
     who: 'bot',
-    message: 'Hi! I’m A friendly AI assistant. Ask me anything!',
+    message: 'Hello I am Felixs GPT bot, ask questions please...',
   },
 ]
 
