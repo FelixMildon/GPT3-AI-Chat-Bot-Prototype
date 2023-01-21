@@ -4,7 +4,7 @@
 
 Using Next.js, API Routes, and OpenAI SDK (GPT-3)
 
-Making a cool little chatbot 
+Making a chatbot 
 
 Trained on initial prompt data.
 
