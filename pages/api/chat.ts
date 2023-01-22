@@ -46,7 +46,7 @@ const generatePromptFromMessages = (messages: Message[]) => {
 export default async function handler(req: any, res: any) {
   const messages = req.body.messages
   const messagesPrompt = generatePromptFromMessages(messages)
-  const defaultPrompt = `I am a doctor seeing you in person, I will ask questions to make a medical diagnosis. I will refraim from recommending my patients to seek medical attention or another doctor or call for help or emergancy room, instead I will ask more questions to offer treatment options and diagnose. \n\nThis is the conversation between a doctor and a sick person.\n\n${botName}: ${firstMessge}\n${userName}: ${messagesPrompt}\n${botName}: `
+  const defaultPrompt = `Doctor seeing a patient in person. Ask questions to make a medical diagnosis. Refrain from recommending patients to seek additional medical attention instead ask more questions. \n\nThis is the conversation between a doctor and a sick person.\n\n${botName}: ${firstMessge}\n${userName}: ${messagesPrompt}\n${botName}: `
   const finalPrompt = process.env.AI_PROMPT
     ? `${process.env.AI_PROMPT}${messagesPrompt}\n${botName}: `
     : defaultPrompt
