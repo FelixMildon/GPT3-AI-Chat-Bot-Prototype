@@ -18,7 +18,7 @@ export default function Layout({ children }) {
       </nav>
         <div className=' px-8 bg-accents-0'>{children}</div>
       <footer className='py-10 w-full mt-auto border-t flex items-center justify-center bg-accents-1 z-20'>
-        <span className='text-primary'>Using Next.js, API Routes, and OpenAI SDK</span>
+        <span className='text-primary'>Built with Next.js, API Routes, and OpenAI SDK</span>
       </footer>
     </div>;
   }
