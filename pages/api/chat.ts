@@ -46,7 +46,7 @@ const generatePromptFromMessages = (messages: Message[]) => {
 export default async function handler(req: any, res: any) {
   const messages = req.body.messages
   const messagesPrompt = generatePromptFromMessages(messages)
-  const defaultPrompt = `Doctor seeing a patient in person. \n\nThis is the conversation between a doctor and a sick person.\n\n${botName}: ${firstMessge}\n${userName}: ${messagesPrompt}\n${botName}: `
+  const defaultPrompt = `I am a doctor and I will make a medical diagnosis. \n\nThis is the conversation between a doctor and a sick person.\n\n${botName}: ${firstMessge}\n${userName}: ${messagesPrompt}\n${botName}: `
   const finalPrompt = process.env.AI_PROMPT
     ? `${process.env.AI_PROMPT}${messagesPrompt}\n${botName}: `
     : defaultPrompt
