@@ -13,7 +13,7 @@ function Home() {
       </section>
 
       <section className="flex flex-col gap-3">
-        <Text variant="h2">AI GPT-3:</Text>
+        <Text variant="h2">Ask the AI about treatments</Text>
         <div className="lg:w-2/3">
           <Chat />
         </div>
